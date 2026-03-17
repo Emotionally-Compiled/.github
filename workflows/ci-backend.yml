@@ -1,10 +1,7 @@
 name: Backend CI Pipeline (Spring Boot)
 
 on:
-  pull_request:
-    branches: [ "develop", "main" ] 
-  push:
-    branches: [ "develop", "main" ]
+  workflow_call:
 
 jobs:
   build-and-test:
